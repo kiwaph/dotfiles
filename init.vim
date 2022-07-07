@@ -43,15 +43,15 @@ inoremap <expr> <C-j> "\<C-n>"
 inoremap <expr> <C-k> "\<C-p>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-"VINEGAR
-let g:netrw_fastbrowse=0
-
-"CUSTOM KEYBINDINGS
+"BUFFERS
 nnoremap <A-h> :bp<CR>
 nnoremap <A-l> :bn<CR>
 nnoremap <A-w> :bw!<CR>
 
-"CUSTOM SETS
+"VINEGAR
+let g:netrw_fastbrowse=0
+
+"SETS
 set number
 set ignorecase
 set smartcase
