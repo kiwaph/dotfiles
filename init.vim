@@ -23,6 +23,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 "FZF
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 nnoremap <C-p> :Files<CR>
+nnoremap <C-g> :GFiles?<CR>
 nnoremap <C-b> :Buffers<CR>
 nnoremap <C-f> :Rg<space>
 
@@ -54,9 +55,11 @@ nnoremap <A-w> :bw!<CR>
 set number
 set ignorecase
 set smartcase
+set signcolumn=yes
+set nowrap
 set hidden
 set nobackup
+set noswapfile
 set nowritebackup
 set updatetime=300
 set shortmess+=c
-set signcolumn=yes
