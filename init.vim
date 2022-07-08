@@ -10,7 +10,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
-Plug 'airblade/vim-gitgutter'
 
 "SYNTAX
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -26,13 +25,6 @@ nnoremap <C-p> :Files<CR>
 nnoremap <C-g> :GFiles?<CR>
 nnoremap <C-b> :Buffers<CR>
 nnoremap <C-f> :Rg<space>
-
-"GITGUTTER
-nnoremap <Leader>h :GitGutterLineHighlightsToggle<CR>
-nnoremap <Leader>s :GitGutterPreviewHunk<CR>
-nnoremap <Leader>u :GitGutterUndoHunk<CR>
-nnoremap <Leader>] :GitGutterNextHunk<CR>
-nnoremap <Leader>[ :GitGutterPrevHunk<CR>
 
 "COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-json', 'coc-prettier']
