@@ -24,7 +24,7 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -
 nnoremap <C-p> :Files<CR>
 nnoremap <C-g> :GFiles?<CR>
 nnoremap <C-b> :Buffers<CR>
-nnoremap <C-f> :Rg<space>
+nnoremap <C-f> :Rg!<space>
 
 "COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-json', 'coc-prettier']
