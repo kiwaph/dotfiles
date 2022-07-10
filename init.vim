@@ -7,7 +7,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 "UTILS
-Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 
@@ -40,8 +39,10 @@ nnoremap <A-h> :bp<CR>
 nnoremap <A-l> :bn<CR>
 nnoremap <A-w> :bw!<CR>
 
-"VINEGAR
-let g:netrw_fastbrowse=0
+"NETRW
+nnoremap - :Ex<CR>
+let g:netrw_liststyle=0
+let g:netrw_banner=0
 
 "SETS
 set number
