@@ -28,6 +28,7 @@ nnoremap <C-f> :Rg!<space>
 
 "COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-json', 'coc-prettier']
+let g:coc_user_config = {'diagnostic.checkCurrentLine' : 1}
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <Leader>p :CocCommand prettier.forceFormatDocument<CR>
