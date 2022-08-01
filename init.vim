@@ -29,12 +29,12 @@ nnoremap <C-f> :Rg!<space>
 "COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-json', 'coc-prettier']
 let g:coc_user_config = {'diagnostic.checkCurrentLine' : 1}
-nnoremap gd <Plug>(coc-definition)
-nnoremap gr <Plug>(coc-references)
-nnoremap gp :CocCommand prettier.forceFormatDocument<CR>
-inoremap <expr> <C-j> "\<C-n>"
-inoremap <expr> <C-k> "\<C-p>"
-inoremap <expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+nmap gd <Plug>(coc-definition)
+nmap gr <Plug>(coc-references)
+nmap gp :CocCommand prettier.forceFormatDocument<CR>
+inoremap <expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
+inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
+inoremap <expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "BUFFERS
 nnoremap <A-h> :bp<CR>
