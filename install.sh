@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Dependencies: NodeJS, ripgrep, git
+# Dependencies: node, ripgrep, git
 
 # COPY CONFIG FILES
 cp .tmux.conf $HOME
